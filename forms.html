@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <nav> 
+        <a href="./index.html" title="Home">HOME</a>         
+    </nav>
+   <p>Formulários</p>
+   <form>
+    <input type="text" placeholder="Seu Nome"> <br /><br />
+    
+    <label for="email">Seu e-mail</label> 
+    <input id="email" type="email"> <br /><br />
+    
+    <input type="tel" placeholder="Seu Telefone"><br /><br />
+    
+    <input type="number" max="30" min="-4" step="2">  <br /><br />
+    
+    <input type="file"> <br/><br />
+
+    <input type="color"> <br /><br />
+
+    <input id="check-concordo" type="checkbox"><label for="check-concordo">Concordo</label><br /><br />
+
+    <label>Qual a cor favorita?</label>
+    <input type="radio" name="cor-fav" id="cor-verde"><label for="cor-verde">Verde</label>
+    <input type="radio" name="cor-fav" id="cor-verme"><label for="cor-verme">Vermelho</label>
+    <input type="radio" name="cor-fav" id="cor-azul"> <label for="cor-azul"> Azul</label> <br /><br />
+
+    <label for="time">Qual seu time favorito?</label>
+    <select id="time">
+        <option>São Paulo</option>
+        <option>Palmeiras</option>
+        <option>Corinthians</option>
+        <option>Santos</option>
+        <option>Flamengo</option>
+        <option>Fluminense</option>
+        <option>Botafogo</option>
+        <option>Vasco da Gama</option>
+        <option>Internacional</option>
+        <option>Gremio</option>
+        <option>Cruzeiro</option>
+        <option>Atletico MG</option>
+        <option>Sport</option>
+        <option>Bahia</option>
+        <option>Coritiba</option>
+        <option>Atletico PR</option>
+    </select>  <br /><br />
+    
+    <label>Insira um comentário</label><br />
+    <textarea></textarea> <br /><br />
+
+     <button type="reset"> Limpar</button>
+     <button type="submit"> Enviar</button>
+   </form>    
+</body>
+</html>

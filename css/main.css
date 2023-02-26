@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header {
+    background-color: rgb(70, 70, 92);
+    padding: 16px 0;
+    color: #f5f6fa;
+}
+
+header .conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+header li {
+    display: inline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header li a {
+    color: #f5f6fa;
+    text-decoration: none; 
+}
+.conteiner {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.artigos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.artigos article img{
+  /*  height: 180px; */
+   width: 100%;
+}
+
+.artigos article{
+    width: 30%; 
+}
+
+.artigos article p,
+.artigos article a {
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.artigos article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+section {
+    padding: 16px 0;
+}
+
+section h2, 
+.artigos article {
+    margin-bottom: 16px;
+}
+
+.artigos article a {
+    background-color: gray;
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.artigos article a:hover {
+    background-color: gray;
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+#esportes {
+    background-color: rgba(0,255,0, 0.1);
+}
+
+#esportes .artigos article a {
+    background-color:#009432 ;
+}
+
+#economia{
+        background-color: #f8f59f;
+        
+}
+
+#economia .artigos article a {
+    background-color:#ff9f1a ;
+}
+
+#tecnologia {
+    background-color: #be525b;
+}
+
+#tecnologia .artigos article a {
+    background-color: #7e1915;
+}
+
+#viagem {
+    background-color: #c273be;
+}
+
+li{
+    display: inline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+#viagem .artigos article a {
+    background-color: #72135e;
+}
+
+#direitos {  
+    background-color: #e3e3e7;
+    color: #c26868;
+}
+
+#direitos article a {
+   color: #7e1915;
+   text-align: right;
+}
