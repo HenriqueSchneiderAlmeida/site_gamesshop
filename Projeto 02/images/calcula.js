@@ -8,7 +8,9 @@ form.addEventListener('submit', function(e) {
     const inputNotaAtividade = document.getElementById('nota-atividade');
 
     let linha = '<tr>';
-    linha += '<td>${inputNomeAtividade.value}</td>';
+    linha += '<td>'
+    linha += inputNomeAtividade.value;
+    linha += '</td>';
     linha += '<td>${inputNotaAtividade.value}</td>';
     linha += '<td>${inputNotaAtividade.value >= 7 ? Aprovado : Reprovado}</td>';
     linha += '</tr>';
