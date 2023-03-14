@@ -11,8 +11,14 @@ form.addEventListener('submit', function(e) {
     linha += '<td>'
     linha += inputNomeAtividade.value;
     linha += '</td>';
-    linha += '<td>${inputNotaAtividade.value}</td>';
-    linha += '<td>${inputNotaAtividade.value >= 7 ? Aprovado : Reprovado}</td>';
+    linha += '<td>';
+    linha +=  inputNotaAtividade.value;
+    linha += '</td>';
+    if (inputNotaAtividade.value >= 7) {
+    linha += '<td>Aprovado</td>';
+    } else {
+    linha += '<td>Reprovado</td>';
+    }
     linha += '</tr>';
 
     linhas+= linha;
@@ -20,5 +26,6 @@ form.addEventListener('submit', function(e) {
     const corpoTabela = document.querySelector('tbody');
     corpoTabela.innerHTML = linhas;
 
+    inputNotaAtividade.value = '';
     inputNomeAtividade.value = '';
 });
