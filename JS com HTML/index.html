@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com Validação dos Dados</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>EBAC Banking</h1>
+        <h2>Depósitos</h2>
+        <form id="formDep">
+            <input type="text" id="nomeDep" required 
+                   placeholder="Nome completo do beneficiário" />
+            <p class="MSGerro">O nome precisa ser competo!</p>
+            <input type="number" id="numConta" required placeholder="Número da conta" />
+            <input type="number" id="ValorDep" required placeholder="Valor" />
+            <textarea id="DescrDep" placeholder="Descrição (opcional)"></textarea>
+            <button type="submit" id="btnDep">Depositar</button>
+        </form>
+        <p class="MSGsucesso"></p>
+    </div>
+    <script src="./main.js"></script>
+    <script>
+        alert ("olá Henrique")
+    </script>
+</body>
+</html>
